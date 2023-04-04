@@ -1,0 +1,56 @@
+.container {
+    color: #FFF;
+    border: 2px solid red;
+    display: flex;
+    height: 45rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-login {
+    background: rgb(30,41,59);
+background: linear-gradient(90deg, rgba(30,41,59,1) 0%, rgba(15,23,42,1) 35%, rgba(30,41,59,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 30.25rem;
+    width: 45rem;
+    padding: 3rem;
+    border-radius: 1rem;
+
+    label {
+        font-size: 1.1rem;
+    }
+
+    input {
+        width: 23rem;
+        border-radius: 0.35rem;
+        height: 1em;
+        border: none;
+        margin-bottom: 0.5rem;
+        margin-top: 0.3rem;
+        padding: 1rem;
+    }
+    
+    input:focus {
+        outline: none;
+    }
+
+    button {
+        background: rgb(30,64,175);
+        background: linear-gradient(90deg, rgba(30,64,175,1) 0%, rgba(59,130,246,1) 35%, rgba(30,64,175,1) 100%);
+        width: 8rem;
+        height: 2.5rem;
+        border-radius: 10px;
+        border-left: 10rem;
+        cursor: pointer;
+        margin-left: 8rem;
+        margin-top: 1rem;
+        color: #FFF;
+        font-weight: bold;
+        font-size: 1.1rem;
+    }
+}
+
+
