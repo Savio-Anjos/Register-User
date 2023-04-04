@@ -1,6 +1,5 @@
 .container {
     color: #FFF;
-    border: 2px solid red;
     display: flex;
     height: 45rem;
     align-items: center;
@@ -9,7 +8,7 @@
 
 .container-login {
     background: rgb(30,41,59);
-background: linear-gradient(90deg, rgba(30,41,59,1) 0%, rgba(15,23,42,1) 35%, rgba(30,41,59,1) 100%);
+    background: linear-gradient(90deg, rgba(30,41,59,1) 0%, rgba(15,23,42,1) 35%, rgba(30,41,59,1) 100%);
     display: flex;
     align-items: center;
     justify-content: center;

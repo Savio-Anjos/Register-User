@@ -1,0 +1,41 @@
+.container {
+    color: #FFF;
+}
+.nav {
+    background: rgb(30,41,59);
+    background: linear-gradient(90deg, rgba(30,41,59,1) 0%, rgba(15,23,42,1) 35%, rgba(30,41,59,1) 100%);
+    width: 97.3%;
+    padding: 1.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    ul {
+        display: flex;
+        justify-content: space-between;
+        width: 30rem;
+        margin-right: 5rem;
+        
+    }
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: #FFF;
+        text-transform: uppercase;
+        padding: 1rem;
+        border-radius: 5px;
+    }
+
+    a:hover {
+        background: rgb(30,64,175);
+        background: linear-gradient(90deg, rgba(30,64,175,1) 0%, rgba(59,130,246,1) 35%, rgba(30,64,175,1) 100%);
+    }
+}
