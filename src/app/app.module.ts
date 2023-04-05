@@ -1,14 +1,19 @@
+//Angular
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+
+//Apollo-Client
+/*
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { ApolloModule, Apollo } from 'apollo-angular';
 import { HttpLink, HttpLinkModule } from 'apollo-angular-link-http';
 import { InMemoryCache } from '@apollo/client/core';
 import { ApolloLink } from 'apollo-link';
 import { onError } from 'apollo-link-error';
-
 import { environment } from '../environments/environment';
+*/
 
+//Components
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -16,8 +21,6 @@ import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { ListComponent } from './components/list/list.component';
 import { ItemListComponent } from './components/item-list/item-list.component';
-import { UsersComponent } from './components/users/users.component';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,11 +29,10 @@ import { UsersComponent } from './components/users/users.component';
     RegisterComponent,
     ListComponent,
     ItemListComponent,
-    UsersComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, ApolloModule],
+  imports: [BrowserModule, AppRoutingModule /*HttpClientModule, ApolloModule*/],
   providers: [
-    HttpLink,
+    /* HttpLink,
     {
       provide: ApolloLink,
       useFactory: (httpLink: HttpLink) => {
@@ -50,7 +52,7 @@ import { UsersComponent } from './components/users/users.component';
       },
       deps: [HttpLink],
     },
-    InMemoryCache,
+    InMemoryCache,*/
   ],
   bootstrap: [AppComponent],
 })
