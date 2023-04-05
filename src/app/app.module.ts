@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 
 // Components
 import { HeaderComponent } from './components/header/header.component';
-import { RegisterComponent } from './components/register/register.component';
+import { RegisterComponent } from './pages/register/register.component';
 import { ListComponent } from './components/list/list.component';
 import { ItemListComponent } from './components/item-list/item-list.component';
 
