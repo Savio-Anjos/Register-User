@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 //Apollo-Client
-/*
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { ApolloModule, Apollo } from 'apollo-angular';
 import { HttpLink, HttpLinkModule } from 'apollo-angular-link-http';
@@ -11,7 +10,6 @@ import { InMemoryCache } from '@apollo/client/core';
 import { ApolloLink } from 'apollo-link';
 import { onError } from 'apollo-link-error';
 import { environment } from '../environments/environment';
-*/
 
 //Components
 import { AppRoutingModule } from './app-routing.module';
@@ -32,7 +30,7 @@ import { ItemListComponent } from './components/item-list/item-list.component';
   ],
   imports: [BrowserModule, AppRoutingModule /*HttpClientModule, ApolloModule*/],
   providers: [
-    /* HttpLink,
+    HttpLink,
     {
       provide: ApolloLink,
       useFactory: (httpLink: HttpLink) => {
@@ -52,7 +50,7 @@ import { ItemListComponent } from './components/item-list/item-list.component';
       },
       deps: [HttpLink],
     },
-    InMemoryCache,*/
+    InMemoryCache,
   ],
   bootstrap: [AppComponent],
 })
