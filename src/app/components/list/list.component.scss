@@ -55,47 +55,6 @@
     flex-wrap: wrap;
 }
 
-.item-list {
-    display: flex;
-    justify-content: baseline;
-    border: 2px solid #cbd5e1;
-    border-radius: 3rem;
-    display: inline-block;
-    width: 25rem;
-    padding: 2rem;
-    max-width: 25rem;
-    margin-right: 1.5rem;
-    margin-left: 1.5rem;
-    margin-bottom: 3rem;
-    margin-top: 3rem;
-}
-
-.list-button {
-    float: right;
-
-    button {
-        margin-right: 1rem;
-        width: 4rem;
-        height: 1.5rem;
-        border-radius: 2rem;
-        border: 1px solid #fff;
-        color: #FFF;
-        cursor: pointer;
-    }
-
-    button:hover {
-        animation: shakeButton 1.5s infinite;
-    }
-}
-
-.button-editar {
-    background-color: darkgreen;
-}
-
-.button-delete {
-    background-color: darkred;
-}
-
 
 @keyframes shakeButton {
     10% { transform: scale(1.05) rotate(5deg); }
