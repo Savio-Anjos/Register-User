@@ -1,0 +1,78 @@
+.general {
+    color: #FFF;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+
+    h1 {
+        font-size: 4rem;
+    }
+    
+    button {
+        background: rgb(30,64,175);
+        background: linear-gradient(90deg, rgba(30,64,175,1) 0%, rgba(59,130,246,1) 35%, rgba(30,64,175,1) 100%);
+        width: 12rem;
+        height: 3.5rem;
+        border-radius: 10px;
+        border-left: 10rem;
+        cursor: pointer;
+       margin-left: 4rem;
+        margin-top: 1rem;
+        color: #FFF;
+        font-weight: bold;
+        font-size: 1.1rem;
+    }
+
+    button:hover {
+        animation: shakeButton 2s infinite;
+    }
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    color: #FFF;
+    
+}
+
+.content {
+    background: rgb(30,41,59);
+    background: linear-gradient(90deg, rgba(30,41,59,1) 0%, rgba(15,23,42,1) 35%, rgba(30,41,59,1) 100%);
+    margin-top: 3rem;
+    width: 65rem;
+    padding: 3rem;
+    border-radius: 3rem;
+
+}
+
+.container-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.item-list {
+    border: 2px solid #cbd5e1;
+    border-radius: 3rem;
+    display: inline-block;
+    width: 25rem;
+    padding: 2rem;
+    max-width: 25rem;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+
+@keyframes shakeButton {
+    10% { transform: scale(1.05) rotate(5deg); }
+    20% { transform: scale(1.05) rotate(-5deg); }
+    30% { transform: scale(1.05) rotate(5deg); }
+    40% { transform: none; }
+  }
+
